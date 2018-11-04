@@ -1,5 +1,14 @@
 #!/usr/bin/env python 3
 
+# Advanced HW 8 change
+# This lets the up arrow work when you run calculator again
+import readline
+
+# Importing anothe Python Library into RPN Calculator
+from colorama import Fore, Back
+print(Fore.RED + 'RPN Calculator')
+print(Back.GREEN + 'Now with a green background!')
+
 def calculate(arg):
 	stack = []
 	tokens = arg.split()
@@ -29,6 +38,7 @@ def main():
 		try: 
 			result = calculate(input('rpn calc> '))
 			print(result)
+
 		except ValueError:
 			pass
 
