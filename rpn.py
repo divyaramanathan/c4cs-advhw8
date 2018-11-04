@@ -2,7 +2,6 @@
 
 def calculate(arg):
 	stack = []
-
 	tokens = arg.split()
 
 	for token in tokens:
